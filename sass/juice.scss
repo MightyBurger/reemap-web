@@ -32,14 +32,14 @@ p>img {
 header {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
-  padding: 20px 50px;
+  padding: 20px 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  font-family: "Segoe UI", serif;
+  font-family: "Open Sans", serif;
   font-size: 24px;
   color: var(--primary-text-color);
   display: flex;
@@ -71,7 +71,7 @@ header {
   height: 100vh;
   background-color: var(--primary-color);
   overflow-x: hidden;
-  padding: 0 40px;
+  padding: 0 20%;
 
   .explore-more {
     position: absolute;
