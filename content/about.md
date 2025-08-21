@@ -4,39 +4,25 @@ description = "About"
 weight = 3
 +++
 
-# Juice
+# Reemap
 
-**Juice** is an intuitive, elegant, and responsive Zola theme for product sites.
-Built by [Huhu.io](https://huhu.io), adopted by a several product sites.
+Reemap is a free input remapping tool for Windows.
 
-# Logo
+# Credit
 
-![](/lurk.png)
+Thank you to the Ori speedrunning community for input and advice.
 
-# Zola
+Special thanks to Charleloe for granting permission to use her adorable `:orilurk:` emoji <img alt="[screenshot]" src="/lurk.png" style="height: 1.2em; width: 1.2em"> for this app's icon! It is my favorite part of Reemap.
 
-[Zola](https://www.getzola.org) is a fast static site generator in a single binary with everything built-in.
+# Legal
 
+<small>
 
-# Huhu.io
+Reemap is available under a permissive open-source license. See [the repository](https://github.com/MightyBurger/reemap) for more information.
 
-[Huhu.io](https://huhu.io) is a global community of coders dedicated to making cool stuff coders need and want. 
-We focus on enabling the developer community by curating, incubating, and launching tools based on great ideas, 
-providing support and funding that allows our engineers to develop what they want, the way they want. 
+See the following notice regarding the Ori screenshot included with Reemap:
 
-# Geddle
+Ori and the Blind Forest: Definitive Edition © Microsoft Corporation. Reemap was created under Microsoft's ["Game Content Usage Rules"](https://www.xbox.com/en-US/developers/rules) using assets from Ori and the Blind Forest: Definitive Edition, and it is not endorsed by or affiliated with Microsoft.
 
-[Geddle.com](https://geddle.com) is the AI-powered platform connecting AI/SaaS brands with influencers for recurring revenue growth.
+</small>
 
-## For AI/SaaS branding
-
-[Geddle.com](https://geddle.com) can accelerate Your AI/SaaS Growth with Influencer Marketing. Connect with the perfect influencers to promote your AI/SaaS product and drive recurring subscription revenue.
-
-See: [Geddle Brands page](https://geddle.com/brands)
-
-## For Influencers
-
-[Geddle.com](https://geddle.com) can help you turn Your Videos into Recurring Revenue
-Create passive income streams by promoting AI/SaaS products to your audience with Geddle's AI-powered platform.
-
-See: [Geddle Influencers page](https://geddle.com/influencers)

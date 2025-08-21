@@ -21,8 +21,7 @@ highlight_theme = "inspired-github"
 juice_logo_name = "Reemap"
 juice_logo_path = "lurk.png"
 juice_extra_menu = [
+    { title = "Tutorial", link = "https://github.com/MightyBurger/reemap" },
     { title = "Github", link = "https://github.com/MightyBurger/reemap" },
 ]
-# Add page titles here to exclude them from the nav section (case sensitive)
-juice_exclude_menu = ["exclude_from_nav"]
 repository_url = "https://github.com/MightyBurger/reemap"
