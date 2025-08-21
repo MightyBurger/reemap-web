@@ -7,7 +7,7 @@
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% block favicon %}
-    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     {% endblock favicon %}
     {% include "_variables.html" %}
     {% block fonts %}
@@ -29,16 +29,19 @@
     <div class="hero">
         {% block hero %}
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- <img class="hero-image" style="width: 50%" src="{{ get_url(path="example.png") }}"> -->
         <section class="text-center">
-            <h1 class="heading-text" style="font-size: 40px">Simple, efficient input remaps</h1>
-            <h3 class="title-text">
-                <b>Reemap</b> is an input remapping tool with a focus on efficiency and simplicity.
+            <h1 class="heading-text" style="font-size: 32px">Simple, efficient input remaps</h1>
+            <h3 class="title-text" style="font-size: 20px">
+                <b>Reemap</b> is a Windows input remapping tool. It implements input remaps thoughtfully and with a perspective of using Reemap for video games.
             </h3>
-            <div>
-                <h2>TODO: download button</h2>
+            <div class="download">
+                <a href="https://github.com/MightyBurger/reemap/releases" class="button">
+                    Download Latest ⭳
+                </a>
             </div>
+
         </section>
-        <img class="hero-image" style="width: 50%" src="{{ get_url(path="example.png") }}">
 
         <div class="explore-more text"
             onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
