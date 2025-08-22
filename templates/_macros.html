@@ -14,6 +14,10 @@
     <a class="nav-item subtitle-text" href="{{ page.permalink | safe }}">{{ page.title }}</a>
     {% endif %}
     {% endfor %}
+    {% for section_path in section.subsections %}
+        {% set section = get_section(path=section_path) %}
+        <a class="nav-item subtitle-text" href="{{ section.permalink | safe }}">{{ section.title }}</a>
+    {% endfor %}
     {% if config.extra.juice_extra_menu %}
         {% for menu in config.extra.juice_extra_menu %}
         <a class="nav-item subtitle-text" href="{{ menu.link | safe }}">{{ menu.title }}</a>
