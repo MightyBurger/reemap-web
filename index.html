@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reemap - Simple, efficient input remaps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <style>
+    :root {
+        --primary-color: #0f1419;
+        --primary-text-color: #d7d7d7;
+        --primary-text-color-over: #FFF;
+        --primary-link-color: #9b9b9b;
+        --button-outline: white;
+        --secondary-color: #202428;
+        --secondary-text-color: #f2f2f2;
+        --toc-highlight-text-color: #808080;
+        --toc-current-color: #8040FF;
+        --toc-background-color: #3a3a3a;
+        --code-color: white;
+        --code-background-color: #4a4a4a;
+
+        --table-header-color: #3a3a3a;
+        --table-border-color: #3a3a3a;
+
+        --shadow-color: #202020;
+        --header-font-family: "Open Sans", sans-serif;
+        --text-font-family: "Open Sans", sans-serif;
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
+</head>
+
+<body>
+    
+
+    <header class="pos-absolute" style="background-color: transparent">
+        
+
+<a href="/">
+    <div class="logo">
+        <img src="/lurk.png" alt="logo">
+        Reemap
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/changelog/">Changelog</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/about/">About</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="/tutorial/">Tutorial</a>
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/MightyBurger/reemap">Github</a>
+        
+    
+</nav>
+
+    </header>
+
+    <div class="hero">
+        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- <img class="hero-image" style="width: 50%" src="/example.png"> -->
+        <section class="text-center">
+            <h1 class="heading-text" style="font-size: 32px">Simple, efficient input remaps</h1>
+            <h3 class="title-text" style="font-size: 20px; font-weight: 400">
+                <b>Reemap</b> is a free tool that remaps keyboard and mouse buttons. It is easy to use and light on your computer.
+            </h3>
+            <div class="download">
+                <a href="https://github.com/MightyBurger/reemap/releases/download/v1.0.0/reemap-1.0.0-x86_64.msi" class="button">
+                    Download Reemap v1.0.0
+                </a>
+            </div>
+
+        </section>
+
+        <div class="explore-more text"
+            onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+            Explore More 🠋
+        </div>
+        <style>
+            .hero section {
+                padding: 0 5rem;
+            }
+
+            @media screen and (max-width: 768px) {
+                .hero section {
+                    padding: 0 2rem;
+                }
+
+                .hero-image {
+                    display: none
+                }
+            }
+        </style>
+        
+    </div>
+
+    
+
+    <main>
+        
+        
+
+        <div class="content text">
+            
+            <div id="features" class="heading-text">Overview</div>
+            <p>Reemap is an input remapping tool for Windows. It runs in the background
+and remaps keyboard and mouse inputs.</p>
+<p><img src="/example.png" alt="screenshot" /></p>
+<p>Reemap is named after Reem, the spirit in <a href="https://www.orithegame.com/">Ori and the Blind Forest</a> whose ancestral
+tree grants Bash.</p>
+<p>Reemap was originally developed for <a href="https://www.orithegame.com/">Ori</a> speedrunners who use input remaps.</p>
+<h1 id="features">Features</h1>
+<ul>
+<li><strong>Profiles</strong> - remap inputs differently for each program</li>
+<li><strong>Layers</strong> - conditionally override inputs in a profile</li>
+<li><strong>Keyboard and mouse</strong> - freely map keyboard inputs to mouse inputs, and vice versa</li>
+<li><strong>Multi maps</strong> - map one input to multiple outputs</li>
+<li><strong>Export and import profiles</strong> - share or back up profiles</li>
+<li><strong>Confine cursor to window</strong> - prevent the mouse from leaving the window (useful for fullscreen
+games on multi-monitor setups)</li>
+</ul>
+<p>Reemap is a general-purpose remap tool, but it is designed with video games in mind. It is lightweight and easy on the CPU, and it won't
+add input lag. It is carefully designed to avoid problems with keys sticking when you switch layers;
+this is a problem some existing remap software suffers from.</p>
+
+            
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <p>Jordan Johnson © 2025</p>
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

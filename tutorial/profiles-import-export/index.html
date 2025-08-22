@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Importing and Exporting Profiles | Reemap - Simple, efficient input remaps </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <style>
+    :root {
+        --primary-color: #0f1419;
+        --primary-text-color: #d7d7d7;
+        --primary-text-color-over: #FFF;
+        --primary-link-color: #9b9b9b;
+        --button-outline: white;
+        --secondary-color: #202428;
+        --secondary-text-color: #f2f2f2;
+        --toc-highlight-text-color: #808080;
+        --toc-current-color: #8040FF;
+        --toc-background-color: #3a3a3a;
+        --code-color: white;
+        --code-background-color: #4a4a4a;
+
+        --table-header-color: #3a3a3a;
+        --table-border-color: #3a3a3a;
+
+        --shadow-color: #202020;
+        --header-font-family: "Open Sans", sans-serif;
+        --text-font-family: "Open Sans", sans-serif;
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/">
+    <div class="logo">
+        <img src="/lurk.png" alt="logo">
+        Reemap
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/changelog/">Changelog</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/about/">About</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="/tutorial/">Tutorial</a>
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/MightyBurger/reemap">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+<div class="toc">
+    <div class="toc-sticky">
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/">Tutorial</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/quickstart/">Quick Example</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles/">Profiles</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-new/">Creating a Profile</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-edit/">Editing a Profile</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-remap/">Setting Remaps</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-cursor/">Confining the Cursor</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-import-export/">Importing and Exporting Profiles</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers/">Layers</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-new/">Creating a Layer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-edit/">Editing a Layer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-remap/">Setting Layer Remaps</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/button-viewer/">Button Viewer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/settings/">Settings</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/exiting/">Exiting Reemap</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/vk/">Appendix: Virtual Key Codes</a>
+        </div>
+        
+    </div>
+</div>
+
+
+        <div class="content text">
+            
+<div class="heading-text"></div>
+<h1 id="importing-and-exporting-profiles">Importing and Exporting Profiles</h1>
+<p>Reemap lets you export and import files.</p>
+<p><img src="/images/tutorial/files.png" alt="screenshot" /></p>
+<h2 id="importing-a-profile">Importing a Profile</h2>
+<p>Click on <strong>File &gt; Import Profile</strong>. Then, select a profile. Reemap will add it to the profile list.</p>
+<h2 id="exporting-a-profile">Exporting a Profile</h2>
+<p>Click on <strong>File &gt; Export Profile &gt; <em>(your profile)</em></strong>. Then, choose a file to save the profile to.</p>
+<h2 id="information-stored-in-profile-files">Information Stored in Profile Files</h2>
+<p>Everything you can configure about a profile is stored in this file, including:</p>
+<ul>
+<li>Profile version</li>
+<li>Profile name</li>
+<li>Profile condition</li>
+<li>All the remaps in this profile</li>
+<li>All the layers in this profile</li>
+<li>Which layers are enabled</li>
+<li>Whether to confine the cursor</li>
+<li>Whether the profile is enabled</li>
+</ul>
+<h2 id="sharing-profiles">Sharing Profiles</h2>
+<p>When you export a profile, you will get a <code>.ron</code> file. This is the file you can send to other people
+for them to import.</p>
+<h3 id="note-on-profile-version">Note on Profile Version</h3>
+<p>The profile version is based on the version of Reemap you are using.
+Reemap will automatically upgrade profiles to newer versions, but it can't downgrade profiles to
+older versions.</p>
+
+
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <p>Jordan Johnson © 2025</p>
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

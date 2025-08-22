@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Creating a Layer | Reemap - Simple, efficient input remaps </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <style>
+    :root {
+        --primary-color: #0f1419;
+        --primary-text-color: #d7d7d7;
+        --primary-text-color-over: #FFF;
+        --primary-link-color: #9b9b9b;
+        --button-outline: white;
+        --secondary-color: #202428;
+        --secondary-text-color: #f2f2f2;
+        --toc-highlight-text-color: #808080;
+        --toc-current-color: #8040FF;
+        --toc-background-color: #3a3a3a;
+        --code-color: white;
+        --code-background-color: #4a4a4a;
+
+        --table-header-color: #3a3a3a;
+        --table-border-color: #3a3a3a;
+
+        --shadow-color: #202020;
+        --header-font-family: "Open Sans", sans-serif;
+        --text-font-family: "Open Sans", sans-serif;
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/">
+    <div class="logo">
+        <img src="/lurk.png" alt="logo">
+        Reemap
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/changelog/">Changelog</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/about/">About</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="/tutorial/">Tutorial</a>
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/MightyBurger/reemap">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+<div class="toc">
+    <div class="toc-sticky">
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/">Tutorial</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/quickstart/">Quick Example</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles/">Profiles</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-new/">Creating a Profile</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-edit/">Editing a Profile</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-remap/">Setting Remaps</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-cursor/">Confining the Cursor</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-import-export/">Importing and Exporting Profiles</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers/">Layers</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-new/">Creating a Layer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-edit/">Editing a Layer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-remap/">Setting Layer Remaps</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/button-viewer/">Button Viewer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/settings/">Settings</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/exiting/">Exiting Reemap</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/vk/">Appendix: Virtual Key Codes</a>
+        </div>
+        
+    </div>
+</div>
+
+
+        <div class="content text">
+            
+<div class="heading-text"></div>
+<h1 id="creating-a-layer">Creating a Layer</h1>
+<p>When you click <strong>Add Layer</strong> inside of a profile, this window appears:</p>
+<p><img src="/images/tutorial/layer_modal.png" alt="screenshot" /></p>
+<p>In this menu, you can name the layer, and you can choose when it is active.</p>
+<p>Here are the available options.</p>
+<h2 id="layer-name">Layer Name</h2>
+<p>This is the name you're giving this layer. This will show up in the layer list. It won't affect how
+this layer behaves in any way.</p>
+<h2 id="layer-type">Layer Type</h2>
+<p>Reemap provides two options for when to enable this layer:</p>
+<table><thead><tr><th style="text-align: center">Type</th><th style="text-align: left">Explanation</th></tr></thead><tbody>
+<tr><td style="text-align: center">Modifier</td><td style="text-align: left">This layer is active only when every button in the <em>condition list</em> is held down.</td></tr>
+<tr><td style="text-align: center">Toggle</td><td style="text-align: left">This layer will become active when everything in the <em>condition list</em> is pressed at the same time. Then, it will become inactive when everything in the list is pressed at the same time again.</td></tr>
+</tbody></table>
+<h2 id="condition-list">Condition List</h2>
+<p>The condition list is a list of buttons that need to be held down to activate this layer.
+When all the buttons are held down, Reemap will either activate the layer until one of the
+buttons are released, or it will toggle this layer, depending on whether this is a
+<a href="/tutorial/layers-new/#layer-type">modifier layer or a toggle layer</a>.</p>
+<p>A list of available conditions is shown on the right. If you click on an item, it will add an entry
+to the condition list shown on the left.</p>
+<p>You can add any keyboard or mouse button to the condition list. You cannot add scroll wheel inputs,
+however.</p>
+<p>You can add as many buttons to this list as you want, though usually you only want one.</p>
+<p>The order of entires in this list does not matter.</p>
+<h3 id="modifier-layer-example">Modifier layer example</h3>
+<p>Say there is a <strong>modifier</strong> layer with <strong>Left Shift</strong> and <strong>Right Shift</strong> both in the condition list.
+This layer will be active when you press both left and right shift. It will become inactive once
+you release either shift key.</p>
+<h3 id="toggle-layer-example">Toggle layer example</h3>
+<p>Say there is a <strong>toggle</strong> layer with <strong>Left Shift</strong> and <strong>Right Shift</strong> both in the condition list.
+This layer will become active when you press both left and right shift. It will stay active until
+you press left shift and right shift again.</p>
+<h2 id="notes">Notes</h2>
+<p>It is okay to remap a key that's also on a layer's condition list. On new button presses, Reemap will
+check which layers to enable <em>before</em> applying the remap. That is, remaps in the profile and other
+layers do <em>not</em> affect when this layer is active.</p>
+<p>If you only want to use a particular button as a layer condition and nothing else, it could be
+useful to suppress that input in the profile remaps. For example, you could make a layer activate
+when you hold <strong>Left Shift</strong> and also suppress it in the profile so the game never sees that
+<strong>Left Shift</strong> input.</p>
+
+
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <p>Jordan Johnson © 2025</p>
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

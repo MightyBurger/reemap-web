@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Example | Reemap - Simple, efficient input remaps </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <style>
+    :root {
+        --primary-color: #0f1419;
+        --primary-text-color: #d7d7d7;
+        --primary-text-color-over: #FFF;
+        --primary-link-color: #9b9b9b;
+        --button-outline: white;
+        --secondary-color: #202428;
+        --secondary-text-color: #f2f2f2;
+        --toc-highlight-text-color: #808080;
+        --toc-current-color: #8040FF;
+        --toc-background-color: #3a3a3a;
+        --code-color: white;
+        --code-background-color: #4a4a4a;
+
+        --table-header-color: #3a3a3a;
+        --table-border-color: #3a3a3a;
+
+        --shadow-color: #202020;
+        --header-font-family: "Open Sans", sans-serif;
+        --text-font-family: "Open Sans", sans-serif;
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/">
+    <div class="logo">
+        <img src="/lurk.png" alt="logo">
+        Reemap
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/changelog/">Changelog</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/about/">About</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="/tutorial/">Tutorial</a>
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/MightyBurger/reemap">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+<div class="toc">
+    <div class="toc-sticky">
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/">Tutorial</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/quickstart/">Quick Example</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles/">Profiles</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-new/">Creating a Profile</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-edit/">Editing a Profile</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-remap/">Setting Remaps</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-cursor/">Confining the Cursor</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-import-export/">Importing and Exporting Profiles</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers/">Layers</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-new/">Creating a Layer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-edit/">Editing a Layer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-remap/">Setting Layer Remaps</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/button-viewer/">Button Viewer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/settings/">Settings</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/exiting/">Exiting Reemap</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/vk/">Appendix: Virtual Key Codes</a>
+        </div>
+        
+    </div>
+</div>
+
+
+        <div class="content text">
+            
+<div class="heading-text"></div>
+<h1 id="quick-example">Quick Example</h1>
+<p>This section just gives a quick example to get you going.</p>
+<p>Let's make it so when <strong>Ori and the Blind Forest: DE is open</strong>, we <strong>change Right Click to C</strong>.</p>
+<h2 id="make-a-profile">Make a Profile</h2>
+<p>Click on the Add Profile button.</p>
+<p><img src="/images/tutorial/quick1.png" alt="screenshot" /></p>
+<p>Give it a name, like "Ori Speedruns".</p>
+<p><img src="/images/tutorial/quick2.png" alt="screenshot" /></p>
+<p>Then, select <strong>Ori and the Blind Forest: Definitive Edition</strong> The game should be running so it appears in this list.</p>
+<p><img src="/images/tutorial/quick3.png" alt="screenshot" /></p>
+<p>Click <strong>OK</strong>.</p>
+<p>You've now created a profile that will be active whenever Ori and the Blind Forest: DE is in focus.
+Now, let's add a remap to this profile.</p>
+<h2 id="make-the-remap">Make the Remap</h2>
+<p>Click on the profile you just made.</p>
+<p><img src="/images/tutorial/quick4.png" alt="screenshot" /></p>
+<p>Click on <strong>Right Click</strong> in the table on the right.</p>
+<p><img src="/images/tutorial/quick5.png" alt="screenshot" /></p>
+<p>Change the dropdown menu to <strong>Remap</strong>.</p>
+<p><img src="/images/tutorial/quick6.png" alt="screenshot" /></p>
+<p>Then, click <strong>C</strong> in the table on the right.</p>
+<p><img src="/images/tutorial/quick7.png" alt="screenshot" /></p>
+<p>Notice <strong>C</strong> appears on the left-hand side.</p>
+<p>Click <strong>OK</strong>.</p>
+<p><img src="/images/tutorial/quick8.png" alt="screenshot" /></p>
+<p>Finally, hit <strong>Apply</strong>.</p>
+<p><img src="/images/tutorial/quick9.png" alt="screenshot" /></p>
+<p>You're good to go! Now, whenever Ori and the Blind Forest: DE is open, all right click inputs
+will be remapped to C inputs.</p>
+
+
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <p>Jordan Johnson © 2025</p>
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>

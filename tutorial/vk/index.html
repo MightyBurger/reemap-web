@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Appendix: Virtual Key Codes | Reemap - Simple, efficient input remaps </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <style>
+    :root {
+        --primary-color: #0f1419;
+        --primary-text-color: #d7d7d7;
+        --primary-text-color-over: #FFF;
+        --primary-link-color: #9b9b9b;
+        --button-outline: white;
+        --secondary-color: #202428;
+        --secondary-text-color: #f2f2f2;
+        --toc-highlight-text-color: #808080;
+        --toc-current-color: #8040FF;
+        --toc-background-color: #3a3a3a;
+        --code-color: white;
+        --code-background-color: #4a4a4a;
+
+        --table-header-color: #3a3a3a;
+        --table-border-color: #3a3a3a;
+
+        --shadow-color: #202020;
+        --header-font-family: "Open Sans", sans-serif;
+        --text-font-family: "Open Sans", sans-serif;
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+<a href="/">
+    <div class="logo">
+        <img src="/lurk.png" alt="logo">
+        Reemap
+    </div>
+</a>
+
+<nav>
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/changelog/">Changelog</a>
+    
+    
+    
+    
+    <a class="nav-item subtitle-text" href="/about/">About</a>
+    
+    
+    
+        
+        <a class="nav-item subtitle-text" href="/tutorial/">Tutorial</a>
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https://github.com/MightyBurger/reemap">Github</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+<div class="toc">
+    <div class="toc-sticky">
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/">Tutorial</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/quickstart/">Quick Example</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles/">Profiles</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-new/">Creating a Profile</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-edit/">Editing a Profile</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-remap/">Setting Remaps</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-cursor/">Confining the Cursor</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/profiles-import-export/">Importing and Exporting Profiles</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers/">Layers</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-new/">Creating a Layer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-edit/">Editing a Layer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/layers-remap/">Setting Layer Remaps</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/button-viewer/">Button Viewer</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/settings/">Settings</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/exiting/">Exiting Reemap</a>
+        </div>
+        
+        <div class="toc-item">
+            <a class="subtext" href="/tutorial/vk/">Appendix: Virtual Key Codes</a>
+        </div>
+        
+    </div>
+</div>
+
+
+        <div class="content text">
+            
+<div class="heading-text"></div>
+<h1 id="appendix-virtual-key-codes">Appendix: Virtual Key Codes</h1>
+<p>This page of the manual reveals some technical detail behind Reemap for reference.</p>
+<p>Reemap handles both mouse and keyboard inputs. For keyboard inputs, Reemap uses Windows
+<a href="https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">virtual key codes</a>.</p>
+<p>Reemap classifies each virtual key code in one of three categories:</p>
+<table><thead><tr><th style="text-align: center">Category</th><th style="text-align: left">Explanation</th></tr></thead><tbody>
+<tr><td style="text-align: center">Common</td><td style="text-align: left">This key is present in most modern hardware and can be remapped.</td></tr>
+<tr><td style="text-align: center">Rare</td><td style="text-align: left">This key is uncommon in present hardware or is otherwise a key you might not want to remap, and is hidden by default. These keys can be shown in the settings.</td></tr>
+<tr><td style="text-align: center">Unmappable</td><td style="text-align: left">Reemap will not let you remap this key.</td></tr>
+</tbody></table>
+<p>Below is a comprehensive list of virtual key codes Reemap handles.</p>
+<table><thead><tr><th style="text-align: center">Code</th><th style="text-align: center">Symbolic Name</th><th style="text-align: center">Category</th><th style="text-align: left">Reemap Name</th></tr></thead><tbody>
+<tr><td style="text-align: center">0x01</td><td style="text-align: center">LBUTTON</td><td style="text-align: center">Rare</td><td style="text-align: left">Left Click as key</td></tr>
+<tr><td style="text-align: center">0x02</td><td style="text-align: center">RBUTTON</td><td style="text-align: center">Rare</td><td style="text-align: left">Right Click as key</td></tr>
+<tr><td style="text-align: center">0x03</td><td style="text-align: center">CANCEL</td><td style="text-align: center">Rare</td><td style="text-align: left">Control break processing</td></tr>
+<tr><td style="text-align: center">0x04</td><td style="text-align: center">MBUTTON</td><td style="text-align: center">Rare</td><td style="text-align: left">Middle Click as key</td></tr>
+<tr><td style="text-align: center">0x05</td><td style="text-align: center">XBUTTON1</td><td style="text-align: center">Rare</td><td style="text-align: left">Mouse X1 as key</td></tr>
+<tr><td style="text-align: center">0x06</td><td style="text-align: center">XBUTTON2</td><td style="text-align: center">Rare</td><td style="text-align: left">Mouse X2 as key</td></tr>
+<tr><td style="text-align: center">0x08</td><td style="text-align: center">BACK</td><td style="text-align: center">Common</td><td style="text-align: left">Backspace</td></tr>
+<tr><td style="text-align: center">0x09</td><td style="text-align: center">TAB</td><td style="text-align: center">Common</td><td style="text-align: left">Tab</td></tr>
+<tr><td style="text-align: center">0x0C</td><td style="text-align: center">CLEAR</td><td style="text-align: center">Common</td><td style="text-align: left">Clear</td></tr>
+<tr><td style="text-align: center">0x0D</td><td style="text-align: center">RETURN</td><td style="text-align: center">Common</td><td style="text-align: left">Enter</td></tr>
+<tr><td style="text-align: center">0x10</td><td style="text-align: center">SHIFT</td><td style="text-align: center">Rare</td><td style="text-align: left">Shift (ambidextrous)</td></tr>
+<tr><td style="text-align: center">0x11</td><td style="text-align: center">CONTROL</td><td style="text-align: center">Rare</td><td style="text-align: left">Ctrl (ambidextrous)</td></tr>
+<tr><td style="text-align: center">0x12</td><td style="text-align: center">MENU</td><td style="text-align: center">Rare</td><td style="text-align: left">Alt (ambidextrous)</td></tr>
+<tr><td style="text-align: center">0x13</td><td style="text-align: center">PAUSE</td><td style="text-align: center">Common</td><td style="text-align: left">Pause</td></tr>
+<tr><td style="text-align: center">0x14</td><td style="text-align: center">CAPITAL</td><td style="text-align: center">Common</td><td style="text-align: left">Caps Lock</td></tr>
+<tr><td style="text-align: center">0x15</td><td style="text-align: center">KANA_HANGUL</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Kana/Hangul</td></tr>
+<tr><td style="text-align: center">0x16</td><td style="text-align: center">IME_ON</td><td style="text-align: center">Rare</td><td style="text-align: left">IME On</td></tr>
+<tr><td style="text-align: center">0x17</td><td style="text-align: center">JUNJA</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Junja</td></tr>
+<tr><td style="text-align: center">0x18</td><td style="text-align: center">FINAL</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Final</td></tr>
+<tr><td style="text-align: center">0x19</td><td style="text-align: center">HANJA_KANJI</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Hanja/Kanji</td></tr>
+<tr><td style="text-align: center">0x1A</td><td style="text-align: center">IME_OFF</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Off</td></tr>
+<tr><td style="text-align: center">0x1B</td><td style="text-align: center">ESCAPE</td><td style="text-align: center">Common</td><td style="text-align: left">Escape</td></tr>
+<tr><td style="text-align: center">0x1C</td><td style="text-align: center">CONVERT</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Convert</td></tr>
+<tr><td style="text-align: center">0x1D</td><td style="text-align: center">NONCONVERT</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Nonconvert</td></tr>
+<tr><td style="text-align: center">0x1E</td><td style="text-align: center">ACCEPT</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Accept</td></tr>
+<tr><td style="text-align: center">0x1F</td><td style="text-align: center">MODECHANGE</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Mode Change</td></tr>
+<tr><td style="text-align: center">0x20</td><td style="text-align: center">SPACE</td><td style="text-align: center">Common</td><td style="text-align: left">Space</td></tr>
+<tr><td style="text-align: center">0x21</td><td style="text-align: center">PRIOR</td><td style="text-align: center">Common</td><td style="text-align: left">Page Up</td></tr>
+<tr><td style="text-align: center">0x22</td><td style="text-align: center">NEXT</td><td style="text-align: center">Common</td><td style="text-align: left">Page Down</td></tr>
+<tr><td style="text-align: center">0x23</td><td style="text-align: center">END</td><td style="text-align: center">Common</td><td style="text-align: left">End</td></tr>
+<tr><td style="text-align: center">0x24</td><td style="text-align: center">HOME</td><td style="text-align: center">Common</td><td style="text-align: left">Home</td></tr>
+<tr><td style="text-align: center">0x25</td><td style="text-align: center">LEFT</td><td style="text-align: center">Common</td><td style="text-align: left">Left Arrow</td></tr>
+<tr><td style="text-align: center">0x26</td><td style="text-align: center">UP</td><td style="text-align: center">Common</td><td style="text-align: left">Up Arrow</td></tr>
+<tr><td style="text-align: center">0x27</td><td style="text-align: center">RIGHT</td><td style="text-align: center">Common</td><td style="text-align: left">Right Arrow</td></tr>
+<tr><td style="text-align: center">0x28</td><td style="text-align: center">DOWN</td><td style="text-align: center">Common</td><td style="text-align: left">Down Arrow</td></tr>
+<tr><td style="text-align: center">0x29</td><td style="text-align: center">SELECT</td><td style="text-align: center">Rare</td><td style="text-align: left">Select</td></tr>
+<tr><td style="text-align: center">0x2A</td><td style="text-align: center">PRINT</td><td style="text-align: center">Rare</td><td style="text-align: left">Print</td></tr>
+<tr><td style="text-align: center">0x2B</td><td style="text-align: center">EXECUTE</td><td style="text-align: center">Rare</td><td style="text-align: left">Execute</td></tr>
+<tr><td style="text-align: center">0x2C</td><td style="text-align: center">SNAPSHOT</td><td style="text-align: center">Common</td><td style="text-align: left">Print Screen</td></tr>
+<tr><td style="text-align: center">0x2D</td><td style="text-align: center">INSERT</td><td style="text-align: center">Common</td><td style="text-align: left">Insert</td></tr>
+<tr><td style="text-align: center">0x2E</td><td style="text-align: center">DELETE</td><td style="text-align: center">Common</td><td style="text-align: left">Delete</td></tr>
+<tr><td style="text-align: center">0x2F</td><td style="text-align: center">HELP</td><td style="text-align: center">Rare</td><td style="text-align: left">Help</td></tr>
+<tr><td style="text-align: center">0x30</td><td style="text-align: center">KEY0</td><td style="text-align: center">Common</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: center">0x31</td><td style="text-align: center">KEY1</td><td style="text-align: center">Common</td><td style="text-align: left">1</td></tr>
+<tr><td style="text-align: center">0x32</td><td style="text-align: center">KEY2</td><td style="text-align: center">Common</td><td style="text-align: left">2</td></tr>
+<tr><td style="text-align: center">0x33</td><td style="text-align: center">KEY3</td><td style="text-align: center">Common</td><td style="text-align: left">3</td></tr>
+<tr><td style="text-align: center">0x34</td><td style="text-align: center">KEY4</td><td style="text-align: center">Common</td><td style="text-align: left">4</td></tr>
+<tr><td style="text-align: center">0x35</td><td style="text-align: center">KEY5</td><td style="text-align: center">Common</td><td style="text-align: left">5</td></tr>
+<tr><td style="text-align: center">0x36</td><td style="text-align: center">KEY6</td><td style="text-align: center">Common</td><td style="text-align: left">6</td></tr>
+<tr><td style="text-align: center">0x37</td><td style="text-align: center">KEY7</td><td style="text-align: center">Common</td><td style="text-align: left">7</td></tr>
+<tr><td style="text-align: center">0x38</td><td style="text-align: center">KEY8</td><td style="text-align: center">Common</td><td style="text-align: left">8</td></tr>
+<tr><td style="text-align: center">0x39</td><td style="text-align: center">KEY9</td><td style="text-align: center">Common</td><td style="text-align: left">9</td></tr>
+<tr><td style="text-align: center">0x41</td><td style="text-align: center">A</td><td style="text-align: center">Common</td><td style="text-align: left">A</td></tr>
+<tr><td style="text-align: center">0x42</td><td style="text-align: center">B</td><td style="text-align: center">Common</td><td style="text-align: left">B</td></tr>
+<tr><td style="text-align: center">0x43</td><td style="text-align: center">C</td><td style="text-align: center">Common</td><td style="text-align: left">C</td></tr>
+<tr><td style="text-align: center">0x44</td><td style="text-align: center">D</td><td style="text-align: center">Common</td><td style="text-align: left">D</td></tr>
+<tr><td style="text-align: center">0x45</td><td style="text-align: center">E</td><td style="text-align: center">Common</td><td style="text-align: left">E</td></tr>
+<tr><td style="text-align: center">0x46</td><td style="text-align: center">F</td><td style="text-align: center">Common</td><td style="text-align: left">F</td></tr>
+<tr><td style="text-align: center">0x47</td><td style="text-align: center">G</td><td style="text-align: center">Common</td><td style="text-align: left">G</td></tr>
+<tr><td style="text-align: center">0x48</td><td style="text-align: center">H</td><td style="text-align: center">Common</td><td style="text-align: left">H</td></tr>
+<tr><td style="text-align: center">0x49</td><td style="text-align: center">I</td><td style="text-align: center">Common</td><td style="text-align: left">I</td></tr>
+<tr><td style="text-align: center">0x4A</td><td style="text-align: center">J</td><td style="text-align: center">Common</td><td style="text-align: left">J</td></tr>
+<tr><td style="text-align: center">0x4B</td><td style="text-align: center">K</td><td style="text-align: center">Common</td><td style="text-align: left">K</td></tr>
+<tr><td style="text-align: center">0x4C</td><td style="text-align: center">L</td><td style="text-align: center">Common</td><td style="text-align: left">L</td></tr>
+<tr><td style="text-align: center">0x4D</td><td style="text-align: center">M</td><td style="text-align: center">Common</td><td style="text-align: left">M</td></tr>
+<tr><td style="text-align: center">0x4E</td><td style="text-align: center">N</td><td style="text-align: center">Common</td><td style="text-align: left">N</td></tr>
+<tr><td style="text-align: center">0x4F</td><td style="text-align: center">O</td><td style="text-align: center">Common</td><td style="text-align: left">O</td></tr>
+<tr><td style="text-align: center">0x50</td><td style="text-align: center">P</td><td style="text-align: center">Common</td><td style="text-align: left">P</td></tr>
+<tr><td style="text-align: center">0x51</td><td style="text-align: center">Q</td><td style="text-align: center">Common</td><td style="text-align: left">Q</td></tr>
+<tr><td style="text-align: center">0x52</td><td style="text-align: center">R</td><td style="text-align: center">Common</td><td style="text-align: left">R</td></tr>
+<tr><td style="text-align: center">0x53</td><td style="text-align: center">S</td><td style="text-align: center">Common</td><td style="text-align: left">S</td></tr>
+<tr><td style="text-align: center">0x54</td><td style="text-align: center">T</td><td style="text-align: center">Common</td><td style="text-align: left">T</td></tr>
+<tr><td style="text-align: center">0x55</td><td style="text-align: center">U</td><td style="text-align: center">Common</td><td style="text-align: left">U</td></tr>
+<tr><td style="text-align: center">0x56</td><td style="text-align: center">V</td><td style="text-align: center">Common</td><td style="text-align: left">V</td></tr>
+<tr><td style="text-align: center">0x57</td><td style="text-align: center">W</td><td style="text-align: center">Common</td><td style="text-align: left">W</td></tr>
+<tr><td style="text-align: center">0x58</td><td style="text-align: center">X</td><td style="text-align: center">Common</td><td style="text-align: left">X</td></tr>
+<tr><td style="text-align: center">0x59</td><td style="text-align: center">Y</td><td style="text-align: center">Common</td><td style="text-align: left">Y</td></tr>
+<tr><td style="text-align: center">0x5A</td><td style="text-align: center">Z</td><td style="text-align: center">Common</td><td style="text-align: left">Z</td></tr>
+<tr><td style="text-align: center">0x5B</td><td style="text-align: center">LWIN</td><td style="text-align: center">Common</td><td style="text-align: left">Left Windows</td></tr>
+<tr><td style="text-align: center">0x5C</td><td style="text-align: center">RWIN</td><td style="text-align: center">Common</td><td style="text-align: left">Right Windows</td></tr>
+<tr><td style="text-align: center">0x5D</td><td style="text-align: center">APPS</td><td style="text-align: center">Common</td><td style="text-align: left">Menu</td></tr>
+<tr><td style="text-align: center">0x5F</td><td style="text-align: center">SLEEP</td><td style="text-align: center">Common</td><td style="text-align: left">Sleep</td></tr>
+<tr><td style="text-align: center">0x60</td><td style="text-align: center">NUMPAD0</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 0</td></tr>
+<tr><td style="text-align: center">0x61</td><td style="text-align: center">NUMPAD1</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 1</td></tr>
+<tr><td style="text-align: center">0x62</td><td style="text-align: center">NUMPAD2</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 2</td></tr>
+<tr><td style="text-align: center">0x63</td><td style="text-align: center">NUMPAD3</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 3</td></tr>
+<tr><td style="text-align: center">0x64</td><td style="text-align: center">NUMPAD4</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 4</td></tr>
+<tr><td style="text-align: center">0x65</td><td style="text-align: center">NUMPAD5</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 5</td></tr>
+<tr><td style="text-align: center">0x66</td><td style="text-align: center">NUMPAD6</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 6</td></tr>
+<tr><td style="text-align: center">0x67</td><td style="text-align: center">NUMPAD7</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 7</td></tr>
+<tr><td style="text-align: center">0x68</td><td style="text-align: center">NUMPAD8</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 8</td></tr>
+<tr><td style="text-align: center">0x69</td><td style="text-align: center">NUMPAD9</td><td style="text-align: center">Common</td><td style="text-align: left">Numpad 9</td></tr>
+<tr><td style="text-align: center">0x6A</td><td style="text-align: center">MULTIPLY</td><td style="text-align: center">Common</td><td style="text-align: left">Multiply</td></tr>
+<tr><td style="text-align: center">0x6B</td><td style="text-align: center">ADD</td><td style="text-align: center">Common</td><td style="text-align: left">Add</td></tr>
+<tr><td style="text-align: center">0x6C</td><td style="text-align: center">SEPARATOR</td><td style="text-align: center">Rare</td><td style="text-align: left">Separator</td></tr>
+<tr><td style="text-align: center">0x6D</td><td style="text-align: center">SUBTRACT</td><td style="text-align: center">Common</td><td style="text-align: left">Subtract</td></tr>
+<tr><td style="text-align: center">0x6E</td><td style="text-align: center">DECIMAL</td><td style="text-align: center">Common</td><td style="text-align: left">Decimal</td></tr>
+<tr><td style="text-align: center">0x6F</td><td style="text-align: center">DIVIDE</td><td style="text-align: center">Common</td><td style="text-align: left">Divide</td></tr>
+<tr><td style="text-align: center">0x70</td><td style="text-align: center">F1</td><td style="text-align: center">Common</td><td style="text-align: left">F1</td></tr>
+<tr><td style="text-align: center">0x71</td><td style="text-align: center">F2</td><td style="text-align: center">Common</td><td style="text-align: left">F2</td></tr>
+<tr><td style="text-align: center">0x72</td><td style="text-align: center">F3</td><td style="text-align: center">Common</td><td style="text-align: left">F3</td></tr>
+<tr><td style="text-align: center">0x73</td><td style="text-align: center">F4</td><td style="text-align: center">Common</td><td style="text-align: left">F4</td></tr>
+<tr><td style="text-align: center">0x74</td><td style="text-align: center">F5</td><td style="text-align: center">Common</td><td style="text-align: left">F5</td></tr>
+<tr><td style="text-align: center">0x75</td><td style="text-align: center">F6</td><td style="text-align: center">Common</td><td style="text-align: left">F6</td></tr>
+<tr><td style="text-align: center">0x76</td><td style="text-align: center">F7</td><td style="text-align: center">Common</td><td style="text-align: left">F7</td></tr>
+<tr><td style="text-align: center">0x77</td><td style="text-align: center">F8</td><td style="text-align: center">Common</td><td style="text-align: left">F8</td></tr>
+<tr><td style="text-align: center">0x78</td><td style="text-align: center">F9</td><td style="text-align: center">Common</td><td style="text-align: left">F9</td></tr>
+<tr><td style="text-align: center">0x79</td><td style="text-align: center">F10</td><td style="text-align: center">Common</td><td style="text-align: left">F10</td></tr>
+<tr><td style="text-align: center">0x7A</td><td style="text-align: center">F11</td><td style="text-align: center">Common</td><td style="text-align: left">F11</td></tr>
+<tr><td style="text-align: center">0x7B</td><td style="text-align: center">F12</td><td style="text-align: center">Common</td><td style="text-align: left">F12</td></tr>
+<tr><td style="text-align: center">0x7C</td><td style="text-align: center">F13</td><td style="text-align: center">Common</td><td style="text-align: left">F13</td></tr>
+<tr><td style="text-align: center">0x7D</td><td style="text-align: center">F14</td><td style="text-align: center">Common</td><td style="text-align: left">F14</td></tr>
+<tr><td style="text-align: center">0x7E</td><td style="text-align: center">F15</td><td style="text-align: center">Common</td><td style="text-align: left">F15</td></tr>
+<tr><td style="text-align: center">0x7F</td><td style="text-align: center">F16</td><td style="text-align: center">Common</td><td style="text-align: left">F16</td></tr>
+<tr><td style="text-align: center">0x80</td><td style="text-align: center">F17</td><td style="text-align: center">Common</td><td style="text-align: left">F17</td></tr>
+<tr><td style="text-align: center">0x81</td><td style="text-align: center">F18</td><td style="text-align: center">Common</td><td style="text-align: left">F18</td></tr>
+<tr><td style="text-align: center">0x82</td><td style="text-align: center">F19</td><td style="text-align: center">Common</td><td style="text-align: left">F19</td></tr>
+<tr><td style="text-align: center">0x83</td><td style="text-align: center">F20</td><td style="text-align: center">Common</td><td style="text-align: left">F20</td></tr>
+<tr><td style="text-align: center">0x84</td><td style="text-align: center">F21</td><td style="text-align: center">Common</td><td style="text-align: left">F21</td></tr>
+<tr><td style="text-align: center">0x85</td><td style="text-align: center">F22</td><td style="text-align: center">Common</td><td style="text-align: left">F22</td></tr>
+<tr><td style="text-align: center">0x86</td><td style="text-align: center">F23</td><td style="text-align: center">Common</td><td style="text-align: left">F23</td></tr>
+<tr><td style="text-align: center">0x87</td><td style="text-align: center">F24</td><td style="text-align: center">Common</td><td style="text-align: left">F24</td></tr>
+<tr><td style="text-align: center">0x90</td><td style="text-align: center">NUMLOCK</td><td style="text-align: center">Common</td><td style="text-align: left">Num Lock</td></tr>
+<tr><td style="text-align: center">0x91</td><td style="text-align: center">SCROLL</td><td style="text-align: center">Unmappable</td><td style="text-align: left">Scroll Lock</td></tr>
+<tr><td style="text-align: center">0xA0</td><td style="text-align: center">LSHIFT</td><td style="text-align: center">Common</td><td style="text-align: left">Left Shift</td></tr>
+<tr><td style="text-align: center">0xA1</td><td style="text-align: center">RSHIFT</td><td style="text-align: center">Common</td><td style="text-align: left">Right Shift</td></tr>
+<tr><td style="text-align: center">0xA2</td><td style="text-align: center">LCONTROL</td><td style="text-align: center">Common</td><td style="text-align: left">Left Ctrl</td></tr>
+<tr><td style="text-align: center">0xA3</td><td style="text-align: center">RCONTROL</td><td style="text-align: center">Common</td><td style="text-align: left">Right Ctrl</td></tr>
+<tr><td style="text-align: center">0xA4</td><td style="text-align: center">LMENU</td><td style="text-align: center">Common</td><td style="text-align: left">Left Alt</td></tr>
+<tr><td style="text-align: center">0xA5</td><td style="text-align: center">RMENU</td><td style="text-align: center">Common</td><td style="text-align: left">Right Alt</td></tr>
+<tr><td style="text-align: center">0xA6</td><td style="text-align: center">BROWSER_BACK</td><td style="text-align: center">Rare</td><td style="text-align: left">Browser Back</td></tr>
+<tr><td style="text-align: center">0xA7</td><td style="text-align: center">BROWSER_FORWARD</td><td style="text-align: center">Rare</td><td style="text-align: left">Browser Forward</td></tr>
+<tr><td style="text-align: center">0xA8</td><td style="text-align: center">BROWSER_REFRESH</td><td style="text-align: center">Rare</td><td style="text-align: left">Browser Refresh</td></tr>
+<tr><td style="text-align: center">0xA9</td><td style="text-align: center">BROWSER_STOP</td><td style="text-align: center">Rare</td><td style="text-align: left">Browser Stop</td></tr>
+<tr><td style="text-align: center">0xAA</td><td style="text-align: center">BROWSER_SEARCH</td><td style="text-align: center">Rare</td><td style="text-align: left">Browser Search</td></tr>
+<tr><td style="text-align: center">0xAB</td><td style="text-align: center">BROWSER_FAVORITES</td><td style="text-align: center">Rare</td><td style="text-align: left">Browser Favorites</td></tr>
+<tr><td style="text-align: center">0xAC</td><td style="text-align: center">BROWSER_HOME</td><td style="text-align: center">Rare</td><td style="text-align: left">Browser Home</td></tr>
+<tr><td style="text-align: center">0xAD</td><td style="text-align: center">VOLUME_MUTE</td><td style="text-align: center">Common</td><td style="text-align: left">Volume Mute</td></tr>
+<tr><td style="text-align: center">0xAE</td><td style="text-align: center">VOLUME_DOWN</td><td style="text-align: center">Common</td><td style="text-align: left">Volume Down</td></tr>
+<tr><td style="text-align: center">0xAF</td><td style="text-align: center">VOLUME_UP</td><td style="text-align: center">Common</td><td style="text-align: left">Volume Up</td></tr>
+<tr><td style="text-align: center">0xB0</td><td style="text-align: center">MEDIA_NEXT_TRACK</td><td style="text-align: center">Common</td><td style="text-align: left">Media Next Track</td></tr>
+<tr><td style="text-align: center">0xB1</td><td style="text-align: center">MEDIA_PREV_TRACK</td><td style="text-align: center">Common</td><td style="text-align: left">Media Previous Track</td></tr>
+<tr><td style="text-align: center">0xB2</td><td style="text-align: center">MEDIA_STOP</td><td style="text-align: center">Common</td><td style="text-align: left">Media Stop</td></tr>
+<tr><td style="text-align: center">0xB3</td><td style="text-align: center">MEDIA_PLAY_PAUSE</td><td style="text-align: center">Common</td><td style="text-align: left">Media Play/Pause</td></tr>
+<tr><td style="text-align: center">0xB4</td><td style="text-align: center">LAUNCH_MAIL</td><td style="text-align: center">Common</td><td style="text-align: left">Start Mail</td></tr>
+<tr><td style="text-align: center">0xB5</td><td style="text-align: center">LAUNCH_MEDIA_SELECT</td><td style="text-align: center">Common</td><td style="text-align: left">Select Media</td></tr>
+<tr><td style="text-align: center">0xB6</td><td style="text-align: center">LAUNCH_APP1</td><td style="text-align: center">Common</td><td style="text-align: left">Start Application 1</td></tr>
+<tr><td style="text-align: center">0xB7</td><td style="text-align: center">LAUNCH_APP2</td><td style="text-align: center">Common</td><td style="text-align: left">Start Application 2</td></tr>
+<tr><td style="text-align: center">0xBA</td><td style="text-align: center">OEM_1</td><td style="text-align: center">Common</td><td style="text-align: left">OEM 1</td></tr>
+<tr><td style="text-align: center">0xBB</td><td style="text-align: center">OEM_PLUS</td><td style="text-align: center">Common</td><td style="text-align: left">Plus</td></tr>
+<tr><td style="text-align: center">0xBC</td><td style="text-align: center">OEM_COMMA</td><td style="text-align: center">Common</td><td style="text-align: left">Comma</td></tr>
+<tr><td style="text-align: center">0xBD</td><td style="text-align: center">OEM_MINUS</td><td style="text-align: center">Common</td><td style="text-align: left">Minus</td></tr>
+<tr><td style="text-align: center">0xBE</td><td style="text-align: center">OEM_PERIOD</td><td style="text-align: center">Common</td><td style="text-align: left">Period</td></tr>
+<tr><td style="text-align: center">0xBF</td><td style="text-align: center">OEM_2</td><td style="text-align: center">Common</td><td style="text-align: left">OEM 2</td></tr>
+<tr><td style="text-align: center">0xC0</td><td style="text-align: center">OEM_3</td><td style="text-align: center">Common</td><td style="text-align: left">OEM 3</td></tr>
+<tr><td style="text-align: center">0xDB</td><td style="text-align: center">OEM_4</td><td style="text-align: center">Common</td><td style="text-align: left">OEM 4</td></tr>
+<tr><td style="text-align: center">0xDC</td><td style="text-align: center">OEM_5</td><td style="text-align: center">Common</td><td style="text-align: left">OEM 5</td></tr>
+<tr><td style="text-align: center">0xDD</td><td style="text-align: center">OEM_6</td><td style="text-align: center">Common</td><td style="text-align: left">OEM 6</td></tr>
+<tr><td style="text-align: center">0xDE</td><td style="text-align: center">OEM_7</td><td style="text-align: center">Common</td><td style="text-align: left">OEM 7</td></tr>
+<tr><td style="text-align: center">0xDF</td><td style="text-align: center">OEM_8</td><td style="text-align: center">Rare</td><td style="text-align: left">OEM 8</td></tr>
+<tr><td style="text-align: center">0xE2</td><td style="text-align: center">OEM_102</td><td style="text-align: center">Common</td><td style="text-align: left">OEM 102</td></tr>
+<tr><td style="text-align: center">0xE5</td><td style="text-align: center">PROCESSKEY</td><td style="text-align: center">Rare</td><td style="text-align: left">IME Process</td></tr>
+<tr><td style="text-align: center">0xE7</td><td style="text-align: center">PACKET</td><td style="text-align: center">Rare</td><td style="text-align: left">Unicode Packet</td></tr>
+<tr><td style="text-align: center">0xF6</td><td style="text-align: center">ATTN</td><td style="text-align: center">Rare</td><td style="text-align: left">Attn</td></tr>
+<tr><td style="text-align: center">0xF7</td><td style="text-align: center">CRSEL</td><td style="text-align: center">Rare</td><td style="text-align: left">CrSel</td></tr>
+<tr><td style="text-align: center">0xF8</td><td style="text-align: center">EXSEL</td><td style="text-align: center">Rare</td><td style="text-align: left">ExSel</td></tr>
+<tr><td style="text-align: center">0xF9</td><td style="text-align: center">EREOF</td><td style="text-align: center">Rare</td><td style="text-align: left">Erase EOF</td></tr>
+<tr><td style="text-align: center">0xFA</td><td style="text-align: center">PLAY</td><td style="text-align: center">Rare</td><td style="text-align: left">Play</td></tr>
+<tr><td style="text-align: center">0xFB</td><td style="text-align: center">ZOOM</td><td style="text-align: center">Rare</td><td style="text-align: left">Zoom</td></tr>
+<tr><td style="text-align: center">0xFC</td><td style="text-align: center">NONAME</td><td style="text-align: center">Unmappable</td><td style="text-align: left">Reserved</td></tr>
+<tr><td style="text-align: center">0xFD</td><td style="text-align: center">PA1</td><td style="text-align: center">Rare</td><td style="text-align: left">PA1</td></tr>
+<tr><td style="text-align: center">0xFE</td><td style="text-align: center">OEM_CLEAR</td><td style="text-align: center">Rare</td><td style="text-align: left">OEM Clear</td></tr>
+</tbody></table>
+
+
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <p>Jordan Johnson © 2025</p>
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>
