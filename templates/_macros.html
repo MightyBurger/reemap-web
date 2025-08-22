@@ -25,3 +25,16 @@
     {% endif %}
 </nav>
 {% endmacro render_header %}
+
+{% macro render_tutorial_toc() %}
+<div class="toc">
+    <div class="toc-sticky">
+        {% set section = get_section(path="tutorial/_index.md") %}
+        {% for p in section.pages %}
+        <div class="toc-item">
+            <a class="subtext" href="{{p.permalink | safe}}">{{ p.title }}</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endmacro render_tutorial_toc %}
