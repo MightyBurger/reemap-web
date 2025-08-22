@@ -19,10 +19,13 @@ remap to.
 
 ## Policy
 
+The policy drop-down menu tells Reemap what to do with this button.
+
 | Policy   | Explanation |
 | :------: | :---------- |
 | No Remap | This button will not be remapped. |
 | Remap    | This button **will be remapped**. When this button is pressed, Reemap will send the buttons in the **output list** instead of the original button press. |
+| Suppress | This button **will be suppressed**. When this button is pressed, Reemap will block the input instead of forwarding it along to the application. |
 
 ## Output List
 
@@ -39,7 +42,3 @@ programs like Notepad. Remapping to **B** and **Left Shift**, however, results i
 instead.
 
 You can click on the arrow buttons to rearrange the outputs.
-
-### Suppressing input
-
-To suppress an input, set the policy to **Remap** but keep the output list empty.

@@ -23,5 +23,8 @@ Reemap was originally developed for [Ori] speedrunners who use input remaps.
 - **Confine cursor to window** - prevent the mouse from leaving the window (useful for fullscreen
 games on multi-monitor setups)
 
+Reemap is a general-purpose remap tool, but it is designed with video games in mind. It is lightweight and easy on the CPU, and it won't
+add input lag. It is carefully designed to avoid problems with keys sticking when you switch layers;
+this is a problem some existing remap software suffers from.
 
 [Ori]: https://www.orithegame.com/

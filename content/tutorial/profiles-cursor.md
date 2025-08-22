@@ -19,5 +19,5 @@ from the game.
 Some games already confine your mouse. Other games, like Ori, don't, so it is helpful to have a tool
 like Reemap do it.
 
-It's easy to get stuck with this setting. Remember, you can **enable Scroll Lock** to disable
+It's easy to get stuck with this setting. So as a reminder, you can **enable Scroll Lock** to disable
 Reemap.

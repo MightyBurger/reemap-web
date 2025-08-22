@@ -7,7 +7,7 @@ weight = 400
 
 You can add layers to a profile in Reemap.
 
-![screenshot](/images/profile_layers.png)
+![screenshot](/images/tutorial/profile_layers.png)
 
 Layers let you temporarily change some remaps. When a layer is active, it *overrides* some of the
 profile's remaps.

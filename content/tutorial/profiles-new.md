@@ -32,17 +32,18 @@ Here are the options:
 | Window title              | Provide a **window title**; for example, `Mozilla Firefox`. The profile is active when the window in focus has this title.|
 | Process                   | Provide a **process name**; for example, `firefox.exe`. The profile is active when the window in focus comes from this process. |
 
-These presets are provided for convenience:
-
-| Preset Name                     | Condition                | Window title                                      | Process       |
-| :----------------------------:  | :----------------------: | :------------------------------------------------ | :------------ |
-| Ori and the Blind Forest        | Window title and process | `Ori And The Blind Forest`                        | `ori.exe`     |
-| Ori and the Blind Forest: DE    | Window title and process | `Ori And The Blind Forest: Definitive Edition`    | `oriDE.exe`   |
-| Ori and the Will of the Wisps   | Window title and process | `OriAndTheWilloftheWisps`                         | `oriwotw.exe` |
-
 ## Window Title and Process
 
 These options tell Reemap when to make this profile active. Refer to the [Condition](#condition)
 section for more information.
 
-You can click anything in the table of running applications, and it will fill these fields in.
+For example, these are the entries you should put for any of the Ori games:
+
+| Game                            | Condition                | Window title                                      | Process       |
+| :----------------------------:  | :----------------------: | :------------------------------------------------ | :------------ |
+| Ori and the Blind Forest        | Window title and process | `Ori And The Blind Forest`                        | `ori.exe`     |
+| Ori and the Blind Forest: DE    | Window title and process | `Ori And The Blind Forest: Definitive Edition`    | `oriDE.exe`   |
+| Ori and the Will of the Wisps   | Window title and process | `OriAndTheWilloftheWisps`                         | `oriwotw.exe` |
+
+You usually won't have to type these in manually. Instead, click an entry in the list of running
+applications, and these fields will be filled in.

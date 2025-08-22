@@ -65,5 +65,4 @@ layers do *not* affect when this layer is active.
 If you only want to use a particular button as a layer condition and nothing else, it could be
 useful to suppress that input in the profile remaps. For example, you could make a layer activate
 when you hold **Left Shift** and also suppress it in the profile so the game never sees that
-**Left Shift** input. To do that, go to the profile, set the remap policy for that button to
-**Remap**, and leave the output list empty.
+**Left Shift** input.

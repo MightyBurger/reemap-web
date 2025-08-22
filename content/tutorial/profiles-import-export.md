@@ -21,7 +21,7 @@ Click on **File > Export Profile > *(your profile)***. Then, choose a file to sa
 
 Everything you can configure about a profile is stored in this file, including:
 
-- Profile version[^1]
+- Profile version
 - Profile name
 - Profile condition
 - All the remaps in this profile
@@ -35,6 +35,8 @@ Everything you can configure about a profile is stored in this file, including:
 When you export a profile, you will get a `.ron` file. This is the file you can send to other people
 for them to import.
 
-[^1]: The profile version is based on the version of Reemap you are using.
+### Note on Profile Version
+
+The profile version is based on the version of Reemap you are using.
 Reemap will automatically upgrade profiles to newer versions, but it can't downgrade profiles to
 older versions.

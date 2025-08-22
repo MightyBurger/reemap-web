@@ -7,7 +7,7 @@ weight = 700
 
 Normally, when you close Reemap, it stays running in the background.
 
-To completely exit Reemap, click Ori <img alt="[screenshot]" src="images/lurk.png" style="height: 1.5em;"> in the tray and click **Exit**.
+To completely exit Reemap, click Ori <img alt="[screenshot]" src="/lurk.png" style="height: 1.2em; width: 1.2em"> in the tray and click **Exit**.
 
 ![screenshot](/images/tutorial/tray.png)
 

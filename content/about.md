@@ -4,8 +4,6 @@ description = "About"
 weight = 3
 +++
 
-# Reemap
-
 Reemap is a free input remapping tool for Windows.
 
 # Credit

@@ -24,6 +24,7 @@ button, and if so, what this button should remap to.
 | Defer    | This layer will not affect this button. The decision on whether to remap this button is first deferred to other layers. If no layers override this button, the decision is finally deferred to the profile.|
 | No Remap | This layer **overrides** the profile's setting. This button will not be remapped, even if the profile has a remap for this button. |
 | Remap    | This layer **overrides** the profile's setting. When this button is pressed, the buttons in the **output list** will be sent. |
+| Suppress | This layer **overrides** the profile's setting. This button will be suppressed. |
 
 ## Output List
 
@@ -40,8 +41,4 @@ programs like Notepad. Remapping to **B** and **Left Shift**, however, results i
 instead.
 
 You can click on the arrow buttons to rearrange the outputs.
-
-### Suppressing input
-To suppress an input, set the policy to **Remap** but keep the output list empty.
-
 

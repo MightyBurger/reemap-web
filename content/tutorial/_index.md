@@ -17,17 +17,6 @@ This website contains instructions for Reemap, an input remap tool.
 Reemap runs in the background and converts keyboard/mouse inputs to other keyboard/mouse inputs. You
 set the remaps you want.
 
-Reemap is designed with video games in mind. It is lightweight and easy on the CPU, and it won't
-add input lag. It is carefully designed to avoid problems with keys sticking when you switch layers;
-this is a problem some existing remap software suffers from.
-
-Note: Reemap only supports plain input remaps. It does not time inputs or run macros.
-
-## Why's it called that?
-
-Reemap is named after Reem, the spirit in [Ori and the Blind Forest][Ori] whose ancestral
-tree grants Bash. Reemap was originally created for the Ori speedrun community.
-
 ## How do I use it?
 
 To get started, make a profile, and add some remaps to it!
